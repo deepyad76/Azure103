@@ -1,0 +1,5 @@
+az group create -l westus -n MyResourceGroup
+az group delete -n MyResourceGroup
+az group exists -n MyResourceGroup
+az group show --name
+az group list --query "[?location=='westus']"

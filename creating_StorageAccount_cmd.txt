@@ -1,0 +1,7 @@
+#Create a storage account using Azure CLI
+#Use the following code to create a storage account using Azure CLI. Change the storage types and names
+to suit your requirements.
+az group create --name storage-resource-group --location westus
+az account list-locations --query "[].{Region:name}" --out table
+az storage account create --name storagedemo --resource-group storage-resource-
+group --location westus --sku Standard_LRS --kind StorageV2

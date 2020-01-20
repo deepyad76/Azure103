@@ -1,0 +1,1 @@
+﻿Set-AzStorageAccount -Name str2413 -ResourceGroupName rg001 -EnableHttpsTrafficOnly $True
